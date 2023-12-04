@@ -44,18 +44,20 @@ public class Cep extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
+					
 					Cep frame = new Cep();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
+					
 				}
 			}
 		});
-	}
 
 	/**
 	 * Create the frame.
 	 */
+	}
 	public Cep() {
 		setTitle("Buscar Cep");
 		setResizable(false);
@@ -161,9 +163,6 @@ public class Cep extends JFrame {
 	}
 	
 	private void buscarCep() {
-	}{
-
-	{
 		String logradouro = "";
 		String tipologradouro = "";
 		String resultado = null;
@@ -196,7 +195,7 @@ public class Cep extends JFrame {
 					        	
 					        }
 			        	}   
-			    }
+			 }
 			 
 			 txtEndereco.setText(tipologradouro + " " + logradouro);
 			 
@@ -205,11 +204,11 @@ public class Cep extends JFrame {
 			} catch (Exception e) {
 
 		
-			System.out.println(e); }
-		
-	}
-	}
-	
+			System.out.println(e); 
+			
+			} 
+		}
+
 	private void limpar() {
 		txtCep.setText(null);
 		txtEndereco.setText(null);
